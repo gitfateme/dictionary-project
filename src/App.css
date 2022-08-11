@@ -7,3 +7,16 @@
   text-align: center;
   margin: 30px 0;
 }
+
+html body {
+  background: rgba(252, 241, 251, 0.507);
+}
+
+.App a {
+  color: rgb(105, 14, 101);
+}
+
+h1 {
+  color: rgb(168, 73, 152);
+  text-transform: uppercase;
+}

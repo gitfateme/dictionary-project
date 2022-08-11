@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Results.css";
 import Meaning from "./Meaning";
 import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
@@ -7,15 +8,18 @@ import Phonetics from "./Phonetics";
 export default function Results(props) {
   if (props.results) {
     return (
-      <div className="Results ">
-        <h2>{props.results.word}</h2>
-        <Phonetics phonetics={props.results.phonetics} />
+      <div className="Results">
+        <section>
+          <h2>{props.results.word}</h2>
+          <Phonetics phonetics={props.results.phonetics} />
+        </section>
+
         {props.results.meanings.map((meaning, index) => {
           return (
-            <div key={index}>
+            <section key={index}>
               <Meaning meaning={meaning} />
               <Synonyms synonyms={meaning.synonyms} />
-            </div>
+            </section>
           );
         })}
       </div>
