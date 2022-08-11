@@ -1,3 +1,8 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .App header {
   text-align: center;
   margin: 30px 0;
@@ -9,14 +14,13 @@
 }
 
 html body {
-  background: rgba(252, 241, 251, 0.507);
+  background: #dbdbdb;
 }
 
 .App a {
-  color: rgb(105, 14, 101);
+  color: rgb(46, 37, 25);
 }
 
 h1 {
-  color: rgb(168, 73, 152);
   text-transform: uppercase;
 }
